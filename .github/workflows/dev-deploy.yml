@@ -19,10 +19,10 @@ jobs:
           submodules: true
           token: ${{secrets.ACTION_TOKEN}}
             
-            # 서브 모듈 변경 점 있으면 update
-            - name: Git Submodule Update
-            run: |
-              git submodule update --remote --recursive
+     # 서브 모듈 변경 점 있으면 update
+      - name: Git Submodule Update
+        run: |
+         git submodule update --remote --recursive
 
       # jdk 설치
       - name: Set up JDK 17
