@@ -27,7 +27,7 @@ jobs:
       - name: Checkout submodule
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
           token: ${{secrets.ACTION_TOKEN}}
 
       # docker hub 로그인
