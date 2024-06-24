@@ -54,7 +54,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          contest: .
+          context: .
           push: true
           tags: ${{secrets.DOCKERHUB_USERNAME}}/study-server
           labels: ${{steps.meta.outputs.labels}}
