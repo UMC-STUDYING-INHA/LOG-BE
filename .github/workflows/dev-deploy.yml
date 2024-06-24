@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           token: ${{secrets.ACTION_TOKEN}}
             
      # 서브 모듈 변경 점 있으면 update
